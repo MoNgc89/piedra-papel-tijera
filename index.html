@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Piedra Papel Tijera</title>
+</head>
+<body>
+
+<div class="cointainer fluid">
+  <div class="col-md-10 offset-md-1">
+    <h1 class="text-center">Elige piedra, papel o tijera</h1>
+
+    <div class="row text-center" id="jugada">
+      <div class="col" onclick="usuario('0');" id="piedra">
+        <img style="cursor:pointer" src="assets/images/piedra.png" alt="piedra">
+      </div>
+      <div class="col" onclick="usuario('1')" id="papel">
+        <img style="cursor:pointer" src="assets/images/papel.png" alt="papel">
+      </div>
+      <div class="col" onclick="usuario('2')" id="tijera">
+        <img style="cursor:pointer" src="assets/images/tijeras.png" alt="tijera">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid text-center overlay" id="resultado" onclick="quitarEfecto()" style="display:none"></div>
+</div>
+
+<script src="assets/js/index.js" charset="utf-8"></script>
+</body>
+</html>

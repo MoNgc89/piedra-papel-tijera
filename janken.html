@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"  href="assets/css/janken.css">
+  <script src="assets/js/janken.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="juego">
+  		<h1>Juega Contra la Maquina</h1>
+  		<div onclick="usuario('0');" id="piedra"><img src="assets/images/piedra.png" alt=""></div>
+          <div onclick="usuario('1');" id="papel"><img src="assets/images/papel.png" alt=""></div>
+          <div onclick="usuario('2');" id="tijera"><img src="assets/images/tijera.png" alt=""></div>
+  	</div>
+
+  	<div id="efecto" style="display:none" onclick="quitarEfecto();"></div>
+
+</body>
+</html>
